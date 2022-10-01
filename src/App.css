@@ -3,3 +3,15 @@
   background-color: black;
   color:white;
 } */
+
+.navgame, .navgames{
+  text-decoration: none
+}; 
+
+.navgame{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navgames {
+  font-family: 'Courier New', Courier, monospace;
+}
