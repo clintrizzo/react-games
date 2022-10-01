@@ -13,7 +13,7 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  color: white
+  color: red
 `;
 
 const Logo = styled.h1``;
@@ -43,13 +43,13 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
-  color: white
+  color: red
   ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
   margin-bottom: 30px;
-  color: white
+  color: red
 `;
 
 const List = styled.ul`
@@ -65,7 +65,6 @@ const ListItem = styled.li`
   width: 50%;
   margin-bottom: 10px;
   text-decoration: none;
-  color: white;
 `;
 
 const Right = styled.div`
@@ -120,12 +119,12 @@ const Footer = () => {
       <Center>
         <Title>Useful Links</Title>
         <List>
-          <ListItem><a href='http://localhost:3030/' style={{color: 'white'}}>Home</a></ListItem>
-          <ListItem><a href='http://localhost:3030/tictactoe' style={{color: 'white'}}>Tic Tac Toe</a></ListItem>
-          <ListItem><a href='http://localhost:3030/connectfour' style={{color: 'white'}}>Connect Four</a></ListItem>
-          <ListItem><a href='http://localhost:3030/memorygame' style={{color: 'white'}}>Memory Game</a></ListItem>
-          <ListItem><a href='http://localhost:3030/snake' style={{color: 'white'}}>Snake</a></ListItem>
-          <ListItem><a href='http://localhost:3030/candycrush' style={{color: 'white'}}>Candy Crush</a></ListItem>
+          <ListItem><a href='http://localhost:3030/' style={{color: 'white', textDecoration: 'none'}}>React Games</a></ListItem>
+          <ListItem><a href='http://localhost:3030/tictactoe' style={{color: 'white', textDecoration: 'none'}}>Tic Tac Toe</a></ListItem>
+          <ListItem><a href='http://localhost:3030/connectfour' style={{color: 'white', textDecoration: 'none'}}>Connect Four</a></ListItem>
+          <ListItem><a href='http://localhost:3030/memorygame' style={{color: 'white', textDecoration: 'none'}}>Memory Game</a></ListItem>
+          <ListItem><a href='http://localhost:3030/snake' style={{color: 'white', textDecoration: 'none'}}>Snake</a></ListItem>
+          <ListItem><a href='http://localhost:3030/candycrush' style={{color: 'white', textDecoration: 'none'}}>Candy Crush</a></ListItem>
         </List>
       </Center>
       <Right>
