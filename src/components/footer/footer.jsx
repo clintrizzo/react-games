@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { mobile } from "../../responsive";
+import { Link } from "react-router-dom"; 
+import { mobile } from "../../responseive";
 import '../footer/footer.css'
 
 const Container = styled.div`
   display: flex;
   background-color: #414a4c;
+  width: 100%
   ${mobile({ flexDirection: "column" })}
 `;
 
@@ -120,7 +122,7 @@ const Footer = () => {
         <Title>Game Navigations</Title>
         <List>
           <ListItem><a href='http://localhost:3030' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Home</a></ListItem>
-          <ListItem><a href='http://localhost:3030/tictactoe' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Tic Tac Toe</a></ListItem>
+          <ListItem><Link to="/tictactoe" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Tic Tac Toe</Link></ListItem>
           <ListItem><a href='http://localhost:3030/connectfour' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Connect Four</a></ListItem>
           <ListItem><a href='http://localhost:3030/memorygame' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Memory Game</a></ListItem>
           <ListItem><a href='http://localhost:3030/snake' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Snake</a></ListItem>
