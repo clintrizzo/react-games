@@ -1,0 +1,7 @@
+.gameNav{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.gameNav:hover {
+  background-color: red;
+}

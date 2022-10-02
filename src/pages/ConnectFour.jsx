@@ -4,7 +4,7 @@ import Footer from "../components/footer/footer"
 function ConnectFour() {
     return (
         <>
-        <h1 style={{paddingBottom: "425px"}}>this is the connect four page</h1>
+        <h1 style={{paddingBottom: "225px"}}>this is the connect four page</h1>
         <Footer />
         </>    );
 }

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import '../footer/footer.css'
 
 const Container = styled.div`
   display: flex;
   background-color: #414a4c;
-  position: fixed;
   ${mobile({ flexDirection: "column" })}
 `;
 
@@ -95,7 +95,7 @@ const Footer = () => {
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            <a href="https://github.com/clintrizzo" rel="noopener noreferrer" target="_blank">
+            <a href="https://github.com/clintrizzo/react-games" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-github-square" aria-hidden="true" style={{color: 'white', fontSize: '25px'}}/>
             </a>  
           </SocialIcon>
@@ -117,14 +117,14 @@ const Footer = () => {
         </SocialContainer>
       </Left>
       <Center>
-        <Title>Useful Links</Title>
+        <Title>Game Navigations</Title>
         <List>
-          <ListItem><a href='http://localhost:3030/' style={{color: 'white', textDecoration: 'none'}}>React Games</a></ListItem>
-          <ListItem><a href='http://localhost:3030/tictactoe' style={{color: 'white', textDecoration: 'none'}}>Tic Tac Toe</a></ListItem>
-          <ListItem><a href='http://localhost:3030/connectfour' style={{color: 'white', textDecoration: 'none'}}>Connect Four</a></ListItem>
-          <ListItem><a href='http://localhost:3030/memorygame' style={{color: 'white', textDecoration: 'none'}}>Memory Game</a></ListItem>
-          <ListItem><a href='http://localhost:3030/snake' style={{color: 'white', textDecoration: 'none'}}>Snake</a></ListItem>
-          <ListItem><a href='http://localhost:3030/candycrush' style={{color: 'white', textDecoration: 'none'}}>Candy Crush</a></ListItem>
+          <ListItem><a href='http://localhost:3030' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Home</a></ListItem>
+          <ListItem><a href='http://localhost:3030/tictactoe' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Tic Tac Toe</a></ListItem>
+          <ListItem><a href='http://localhost:3030/connectfour' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Connect Four</a></ListItem>
+          <ListItem><a href='http://localhost:3030/memorygame' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Memory Game</a></ListItem>
+          <ListItem><a href='http://localhost:3030/snake' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Snake</a></ListItem>
+          <ListItem><a href='http://localhost:3030/candycrush' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Candy Crush</a></ListItem>
         </List>
       </Center>
       <Right>
