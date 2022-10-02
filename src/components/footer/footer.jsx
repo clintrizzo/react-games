@@ -121,12 +121,12 @@ const Footer = () => {
       <Center>
         <Title>Game Navigations</Title>
         <List>
-          <ListItem><a href='http://localhost:3030' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Home</a></ListItem>
+          <ListItem><Link to="/" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Home</Link></ListItem>
           <ListItem><Link to="/tictactoe" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Tic Tac Toe</Link></ListItem>
-          <ListItem><a href='http://localhost:3030/connectfour' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Connect Four</a></ListItem>
-          <ListItem><a href='http://localhost:3030/memorygame' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Memory Game</a></ListItem>
-          <ListItem><a href='http://localhost:3030/snake' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Snake</a></ListItem>
-          <ListItem><a href='http://localhost:3030/candycrush' style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Candy Crush</a></ListItem>
+          <ListItem><Link to="/connectfour" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Connect Four</Link></ListItem>
+          <ListItem><Link to="/memorygame" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Memory Game</Link></ListItem>
+          <ListItem><Link to="/snake" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Snake</Link></ListItem>
+          <ListItem><Link to="/candycrush" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Candy Crush</Link></ListItem>
         </List>
       </Center>
       <Right>
