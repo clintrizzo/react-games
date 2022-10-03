@@ -96,22 +96,22 @@ const Footer = () => {
           with React. I also included testing automation with cypress to practice my unit testing skills.
         </Desc>
         <SocialContainer>
-          <SocialIcon color="3B5999">
+          <SocialIcon color="3B5999" className='socialLinks'>
             <a href="https://github.com/clintrizzo/react-games" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-github-square" aria-hidden="true" style={{color: 'white', fontSize: '25px'}}/>
             </a>  
           </SocialIcon>
-          <SocialIcon color="E4405F">
+          <SocialIcon color="E4405F" className='socialLinks'>
             <a href="https://www.youtube.com/channel/UCpARYFoliOIr-UGpIT-4ibQ/videos" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-youtube-square" aria-hidden="true" style={{color: 'white', fontSize: '25px'}}/>
             </a>            
           </SocialIcon>
-          <SocialIcon color="55ACEE">
+          <SocialIcon color="55ACEE" className='socialLinks'>
             <a href="https://www.linkedin.com/in/clinton-rizzo/" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-linkedin-square" aria-hidden="true" style={{color: 'white', fontSize: '25px'}}/>
             </a>            
           </SocialIcon>
-          <SocialIcon color="E60023">
+          <SocialIcon color="E60023" className='socialLinks'>
             <a href="https://www.instagram.com/clintrizzo/" rel="noopener noreferrer" target="_blank">
               <i className="fa fa-instagram" aria-hidden="true" style={{color: 'white', fontSize: '25px'}}/>
             </a>  
