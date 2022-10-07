@@ -1,11 +1,81 @@
-.gameNav{
+/* left side of the footer */
+.left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: red
+}
+
+#description{
+  margin: 20px 0px;
+  color: white;
+}
+
+#socialLinks{
+  display: flex;
+  color: white;
+}
+
+#socialDisplay{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.socialLink:hover {
+  background-color: black;
+}
+
+/* center of the footer */
+.center{
+  flex: 1;
+  padding: 20px;
+  color: red
+}
+
+#columnHeader{
+  margin-bottom: 30px;
+  color: red
+}
+
+#navExt{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: white
+}
+
+#extension{
+  width: 50%;
+  margin-bottom: 10px;
+  text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 .gameNav:hover {
   background-color: red;
 }
 
-.socialLinks:hover {
-  background-color: black;
+/* right side of the footer */
+.right{
+  flex: 1;
+  padding: 20px;
+}
+
+#contactInfo{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
