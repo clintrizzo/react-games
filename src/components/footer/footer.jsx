@@ -6,7 +6,7 @@ import '../footer/footer.css'
 const Container = styled.div`
   display: flex;
   background-color: #414a4c;
-  width: 100%
+  width: 100%;
   ${mobile({ flexDirection: "column" })}
 `;
 
@@ -47,7 +47,7 @@ const ContactItem = styled.div`
 
 const Footer = () => {
   return (
-    <Container>
+    <Container className='footerContainer' id='smallScreen'>
       <Left className='left' id='leftColumn'>
         <Logo>React Games</Logo>
         <Desc clasName='desc' id='description'>

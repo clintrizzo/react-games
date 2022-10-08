@@ -9,3 +9,11 @@
 .navgames {
   font-family: 'Courier New', Courier, monospace;
 }
+
+#navDrop{
+  color:white
+}
+
+#nav{
+  text-decoration: none;
+}
