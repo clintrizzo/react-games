@@ -1,4 +1,20 @@
 /* left side of the footer */
+.footerContainer{
+  margin-top: 245px;
+}
+
+@media screen and (min-width: 1400px){
+  #smallScreen{
+    margin-top: 193px;
+  }
+}
+
+@media screen and (max-width: 825px){
+  #smallScreen{
+    margin-top: 355px;
+  }
+}
+
 .left{
   flex: 1;
   display: flex;
@@ -58,11 +74,11 @@
   margin-bottom: 10px;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-size: 16px;
 }
 
 .gameNav:hover {
-  background-color: red;
+  background-color: #f44336
 }
 
 /* right side of the footer */
@@ -73,7 +89,7 @@
 
 #contactInfo{
   font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-size: 15px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;

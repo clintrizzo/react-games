@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function BasicExample() {
   return (
@@ -27,15 +28,20 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: 'white'}}/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" style={{paddingLeft: '50px'}}>
-            <Nav.Link><Link to="/tictactoe" style={{color: 'white', paddingRight: '25px'}} className="w3-bar-item w3-button tablink w3-red">Tic-Tac-Toe</Link></Nav.Link>
+            <NavDropdown title="Tic Tac Toe" id='navDrop' className='navDropBack' style={{paddingRight: '25px'}}>
 
-            <Nav.Link><Link to="/connectfour" style={{color: 'white', paddingRight: '25px'}} className="w3-bar-item w3-button tablink w3-red">Connect Four</Link></Nav.Link>
+              <Nav.Link><Link to="/tictactoe3x3" style={{color: 'black', marginRight: '25px', textDecoration: 'none'}} ><li>Tic-Tac-Toe 3x3</li></Link></Nav.Link> 
 
-            <Nav.Link><Link to="/memorygame" style={{color: 'white', paddingRight: '25px'}} className="w3-bar-item w3-button tablink w3-red">Memory Game</Link></Nav.Link>
+              <Nav.Link><Link to="/tictactoe4x4" style={{color: 'black', paddingRight: '25px', textDecoration: 'none'}} ><li>Tic-Tac-Toe 4x4</li></Link></Nav.Link>
+            </NavDropdown>
 
-            <Nav.Link><Link to="/snake" style={{color: 'white', paddingRight: '25px'}} className="w3-bar-item w3-button tablink w3-red">Snake</Link></Nav.Link>
+            <Nav.Link><Link to="/connectfour" id='nav' className='navBar' style={{color: 'white', paddingRight: '25px'}}>Connect Four</Link></Nav.Link>
+
+            <Nav.Link><Link to="/memorygame" id='nav' className='navBar' style={{color: 'white', paddingRight: '25px'}}>Memory Game</Link></Nav.Link>
+
+            <Nav.Link><Link to="/snake" id='nav' className='navBar' style={{color: 'white', paddingRight: '25px'}}>Snake</Link></Nav.Link>
             
-            <Nav.Link><Link to="/candycrush" style={{color: 'white', paddingRight: '25px'}} className="w3-bar-item w3-button tablink w3-red">Candy Crush</Link></Nav.Link>
+            <Nav.Link><Link to="/candycrush" id='nav' className='navBar' style={{color: 'white', paddingRight: '25px'}}>Candy Crush</Link></Nav.Link>
 
           </Nav>
         </Navbar.Collapse>

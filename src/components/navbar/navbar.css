@@ -9,3 +9,18 @@
 .navgames {
   font-family: 'Courier New', Courier, monospace;
 }
+
+.navDropBack{
+  background-color: #414a4c;
+  text-decoration: none;
+}
+
+#navDrop{
+  color:white;
+  background-color: #414a4c;
+  text-decoration: none;
+}
+
+#nav{
+  text-decoration: none;
+}
