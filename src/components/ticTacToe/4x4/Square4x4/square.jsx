@@ -2,7 +2,7 @@ import React from "react";
 
 function Square({ clickedArray, handleClick }) {
   return (
-    <div className="board">
+    <div className="board" id='ipadScreen4x4'>
       {clickedArray.map((item, index) => {
         if (item === "") {
           return (

@@ -12,10 +12,10 @@ function EndGame({ clearHistory, winCount, restartGame, player, draw }) {
         O's WINS: {winCount.O}
       </span>
 
-      <button className="btn" onClick={restartGame}>
+      <button className="btn-4x4" onClick={restartGame}>
         RESTART GAME
       </button>
-      <button className="btn" onClick={clearHistory}>
+      <button className="btn-4x4" onClick={clearHistory}>
         CLEAR HISTORY
       </button>
     </div>

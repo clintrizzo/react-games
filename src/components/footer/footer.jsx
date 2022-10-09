@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom"; 
 import { mobile } from "../../responseive";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../footer/footer.css'
 
 const Container = styled.div`
@@ -81,11 +82,21 @@ const Footer = () => {
         <Title className='header' id='columnHeader'>Game Navigations</Title>
         <List className='navLinks' id='navExt'>
           <ListItem className='navLink' id='extension'><Link to="/" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Home</Link></ListItem>
-          <ListItem className='navLink' id='extension'><Link to="/tictactoe" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Tic Tac Toe</Link></ListItem>
+
+          <NavDropdown title="Tic Tac Toe">
+            <ListItem className='navLink' id='extension'><Link to="/tictactoe3x3" style={{color: 'black', textDecoration: 'none', textAlign: 'center'}} className='gameNav'>3x3</Link></ListItem>
+            <ListItem className='navLink' id='extension'><Link to="/tictactoe4x4" style={{color: 'black', textDecoration: 'none'}} className='gameNav'>4x4</Link></ListItem>
+          </ NavDropdown>
+
           <ListItem className='navLink' id='extension'><Link to="/connectfour" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Connect Four</Link></ListItem>
+
           <ListItem className='navLink' id='extension'><Link to="/memorygame" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Memory Game</Link></ListItem>
+
+
           <ListItem className='navLink' id='extension'><Link to="/snake" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Snake</Link></ListItem>
+
           <ListItem className='navLink' id='extension'><Link to="/candycrush" style={{color: 'white', textDecoration: 'none'}} className='gameNav'>Candy Crush</Link></ListItem>
+
         </List>
       </Center>
       <Right className='right' id='rightColumn'>
@@ -94,10 +105,10 @@ const Footer = () => {
           <i className="fa fa-road" style={{marginRight:"10px"}}/> Corona Ca 92883
         </ContactItem>
         <ContactItem className='contact' id='contactInfo'>
-        <i className="fa fa-phone" style={{marginRight:"10px"}}/> +1 951 288 2222
+        <i className="fa fa-phone" style={{marginRight:"10px"}}/> +1 951 288 2247
         </ContactItem>
         <ContactItem className='contact' id='contactInfo'>
-          <i className="fa fa-envelope" style={{marginRight:"10px"}} /> clint.r@gamil.com
+          <i className="fa fa-envelope" style={{marginRight:"10px"}} /> clint.rizzo92@gamil.com
         </ContactItem>
       </Right>
     </Container>
